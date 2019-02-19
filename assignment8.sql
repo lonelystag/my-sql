@@ -1,10 +1,10 @@
 create database guvi;
 use guvi;
 create table Employee(
-  ID varchar(10) autoincrement,
+  ID int(10) primary key auto_increment,
   NAME char(15),
   AGE int(10));
-insert into Employee(ID,NAME,AGE)
-  values('nx1','ramesh','19');
-insert into Employee(ID,NAME,AGE)
-  values('nxc3','javed','18');
+insert into Employee(NAME,AGE)
+  values('ramesh','19');
+insert into Employee(NAME,AGE)
+  values('javed','18');
